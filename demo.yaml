@@ -1,1 +1,16 @@
 teams: []
+# new user stanza 
+  - name:  oo
+    sourceRepos:
+    - '*'
+    clusterResourceWhitelist:
+      - group: ""
+        kind: Namespace
+      - group: kargo.akuity.io
+        kind: Project
+    appOfAppsRepo:
+      repoURL: https://github.com/suxess-it/oo-apps
+      path: k3d-apps
+      revision: main
+    multiStageKargoAppSet:
+      organization: suxess-it
