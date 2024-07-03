@@ -1,1 +1,16 @@
-teams:
+"0":
+    name: mm
+    sourceRepos:
+        - "*"
+    clusterResourceWhitelist:
+        - group: ""
+          kind: Namespace
+        - group: kargo.akuity.io
+          kind: Project
+    appOfAppsRepo:
+        repoURL: https://github.com/suxess-it/mm-apps
+        path: k3d-apps
+        revision: main
+    multiStageKargoAppSet:
+        organization: suxess-it
+teams: null
